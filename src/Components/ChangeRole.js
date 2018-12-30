@@ -13,7 +13,7 @@ class ChangeRole extends Component {
   }
 
   handleSubmit(e){
-    this.props.changeRole('admin', 2);
+    this.props.onChangeRole('admin', 2);
     //console.log('save button clicked');
     e.preventDefault();
   }

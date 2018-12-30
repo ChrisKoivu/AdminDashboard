@@ -9,7 +9,7 @@ class Users extends Component {
     if(this.props.users){
       users = this.props.users.map(user => {
         return (
-          <User  key={user.name} user={user} changeRole={this.props.onRoleChange}  />
+          <User  key={user.name} user={user} onRoleChange={this.props.onRoleChange}  />
         );
       });
     }

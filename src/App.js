@@ -41,12 +41,13 @@ class App extends React.Component {
     // change the role of the desired user by index
     let newUsersArray = this.changeRole(users, role, index);
 
-    // test output
-    console.log(newUsersArray)
-
-    // save the updated array
+      // save the updated array
     this.setState(
-      {users: newUsersArray}
+      {users: newUsersArray},
+      () =>
+    console.log(
+      this.state.users //verify state is updated
+)
     );
   }
 
