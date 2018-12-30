@@ -45,9 +45,9 @@ class App extends React.Component {
     this.setState(
       {users: newUsersArray},
       () =>
-    console.log(
-      this.state.users //verify state is updated
-)
+      console.log(
+        this.state.users //verify state is updated
+      )
     );
   }
 

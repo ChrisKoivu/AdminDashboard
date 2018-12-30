@@ -13,8 +13,7 @@ class ChangeRole extends Component {
   }
 
   handleSubmit(e){
-    this.props.onChangeRole('admin', 2);
-    //console.log('save button clicked');
+    this.props.onChangeRole(this.refs.role.value, this.props.index);
     e.preventDefault();
   }
 
@@ -31,10 +30,6 @@ class ChangeRole extends Component {
           </select>
           <input type="submit" value="Save" />
         </form>
-       
-        
-       
-       
     );
   }
 }

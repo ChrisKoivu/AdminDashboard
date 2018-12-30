@@ -19,7 +19,7 @@ class User extends React.Component {
         <td><strong>{this.props.user.name}</strong></td>
         <td>{this.props.user.email}</td>
         <td>{this.props.user.role}</td>     
-        <td><ChangeRole onChangeRole={this.props.onRoleChange}/></td>  
+        <td><ChangeRole index={this.props.user.index} onChangeRole={this.props.onRoleChange}/></td>  
       </tr>
     );
   }
